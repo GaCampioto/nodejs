@@ -21,8 +21,10 @@
     "database-cleaner": "^0.12.0",
     "mocha": "^2.4.5",
     "supertest": "^1.2.0"
-  }
-
+  },
+  "engines":{
+    "node":"4.1.1"
+  },
   "scripts": {
     "start":"node app"
   }

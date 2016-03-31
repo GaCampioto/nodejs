@@ -4,8 +4,9 @@ var io = require('socket.io')(http);
 
 
 app.set('io',io);
-
-http.listen(3000, function(){
+//PORTA PARA ABRIR NO HEROKU
+var porta = process.env.PORT || 3000;
+http.listen(porta, function(){
 	console.log('Servidor rodando');
 });
 
